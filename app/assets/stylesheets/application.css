@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ .hello-button {
+   display: initial;
+ }
+
+ .hello--display .hello-button {
+   display: none;
+ }
