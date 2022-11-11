@@ -1,16 +1,4 @@
-
-<ol
-data-controller="hello"
-data-hello-supported-class="hello--display">
-
-<li data-hello-target="item"><%= 'One' %> </li>
-<li data-hello-target="item">
-<select name="cars" id="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-</li>
-<button data-action="hello#toggle" class="hello-button">Press</button>
-</ol>
+<div data-controller = 'hello'>
+  <h1 data-hello-target = 'output'></h1>
+  <button data-action="hello#toggle">Button</button>
+</div>

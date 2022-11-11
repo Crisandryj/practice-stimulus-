@@ -1,12 +1,11 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = [ "item" ]
-  static classes = [ "supported" ]
+  static targets = [ "output" ]
+  // static classes = [ "display" ]
 
 
   toggle() {
-    this.element.classList.add(this.supportedClass)
-  }
+    this.outputTarget.textContent = 'helloo'  }
 
 }
