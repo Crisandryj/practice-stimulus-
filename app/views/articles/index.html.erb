@@ -1,7 +1,14 @@
-<div data-controller = 'hello'
+<!-- <div data-controller = 'hello'
      data-hello-primary-class = 'btn-primary'>
   <h1 data-hello-target= 'hide'
           >Heloo</h1>
   <button class= 'btn'
           data-action="hello#toggle" >Button</button>
+</div> -->
+
+<div data-controller = "hello"
+    data-hello-toggle-class = "hide">
+  <h1 data-hello-target = "hide" >Example</h1>
+  <h1 data-hello-target = "hide" class = "show">Example</h1>
+  <button data-action ="hello#toggle">Click</button>
 </div>
