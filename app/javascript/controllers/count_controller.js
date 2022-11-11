@@ -8,7 +8,7 @@ export default class extends Controller {
 
 change () {
   let length = this.feildTarget.value.length
-  this.outputTarget.textContent = `${length} characters`
+  this.outputTarget.textContent = `${280 - length} characters left`
 }
 
 connect() {
