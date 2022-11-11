@@ -1,14 +1,18 @@
-<!-- <div data-controller = 'hello'
-     data-hello-primary-class = 'btn-primary'>
-  <h1 data-hello-target= 'hide'
-          >Heloo</h1>
-  <button class= 'btn'
-          data-action="hello#toggle" >Button</button>
-</div> -->
 
 <div data-controller = "hello"
-    data-hello-toggle-class = "hide">
+    data-hello-toggle-class = "hide"
+    data-hello-highlight-class = "highlight">
+
   <h1 data-hello-target = "hide" >Example</h1>
   <h1 data-hello-target = "hide" class = "show">Example</h1>
+
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" data-action= "hello#highlight">
+  <label data-hello-target = "highlight" for="vehicle1"> I have a bike</label><br>
+
   <button data-action ="hello#toggle">Click</button>
+</div>
+
+<div data-controller = "tweet" data-tweet-character-count-value = 140>
+  <input data-tweet-target = "feild" data-action = "keyup->tweet#change" type="<textarea name="text" id="text" cols="30" rows="10"></textarea>
+  <div data-tweet-target = "output"> </div>
 </div>
